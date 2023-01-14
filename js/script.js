@@ -16,5 +16,5 @@ let stock = 4200;
 let expenses_bal = balance - (car + food) ;
 let profits = expenses_bal + invoice + stock;
 /* итог */
-let totalBalance = profits;
+let totalBalance = `Итог ${profits}`;
 console.log(totalBalance);
