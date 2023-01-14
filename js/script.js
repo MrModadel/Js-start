@@ -13,8 +13,15 @@ let food = 890;
 let invoice = 5500;
 let stock = 4200;
 /* вычесление */
-let expenses_bal = balance - (car + food) ;
-let profits = expenses_bal + invoice + stock;
+console.log(`Баланс: ${balance}`);
+let car_fd = car + food;
+let expenses_bal = balance - car_fd;
+console.log(`Расходы: ${car_fd}` );
+let inc_stock = invoice + stock;
+let profits = expenses_bal + inc_stock;
+console.log(`Придал: ${inc_stock}`);
+let cl_money = inc_stock - car_fd;
+console.log(`Чистая прибыл: ${cl_money}`);
 /* итог */
-let totalBalance = `Итог: ${profits}`;
-console.log(totalBalance);
+let totalBalance = profits;
+console.log(`Итог: ${totalBalance}`);
